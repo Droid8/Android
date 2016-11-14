@@ -94,7 +94,7 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
             @Override
             public void run() {
                 Looper.prepare();
-                Toast.makeText(mContext, "程序开小差了呢..", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, R.string.crash_error, Toast.LENGTH_SHORT).show();
                 Looper.loop();
             }
         }.start();
